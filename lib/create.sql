@@ -6,3 +6,16 @@ CREATE TABLE project (
       start_date DATE,
       end_date DATE
 );
+
+CREATE TABLE user (
+  id INTEGER PRIMARY KEY,
+    name TEXT,
+    age INTEGER,
+)
+
+CREATE TABLE pledge (
+  id INTEGER PRIMARY KEY,
+    amount INTEGER,
+    user_id FOREIGN KEY,
+    project_id FOREIGN KEY
+);
